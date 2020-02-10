@@ -13,7 +13,8 @@ Q2. Backend Technical Assessment
 ## Installation
 
 ```bash
-git clone git@github.com:lameo/TAPS.git
+git clone git@github.com:lameo/TAPS2.git
+cd TAPS2
 # Loading the virtual environment to isolate our package dependencies locally
 env\Scripts\activate
 # Getting into file directory
