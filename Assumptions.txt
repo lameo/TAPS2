@@ -1,0 +1,24 @@
+Assumptions
+
+Individual_model
+- There is only 2 gender type in the case study
+- There is only 3 occupation type in this case study 
+- There is only 6 different marital status according to https://www.singstat.gov.sg/-/media/files/standards_and_classifications/scms.pdf
+- The spouse field will just contain the name
+- individual names are considered unique in this case study since there isn't the NRIC field
+
+Housing_type
+- There is at least 3 HousingType (Possible options: Landed, Condominium, HDB), but this is non-exhaustive
+
+Filtering results
+- Age of the person will be considered up to the exact date, ie the person will only be 1 year older when it 
+  pass their birthday itself, not on the 1st Jan.
+- If 2 individuals in the same household have each other name as spouse, they will be considered as
+  1 married family
+
+Overall 
+- GET will be only be used for data retrieval operation only, POST will only be used for creation, update
+- In the event GET method is included in data creation/update methods, it is to facilate the django 
+  GUI panel functionality, the GET function itself is nonfunctional. 
+
+
